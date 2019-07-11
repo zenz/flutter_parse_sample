@@ -1,0 +1,41 @@
+name: f_course
+description: a flutter sample for parse server communication.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.1.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sembast: ^1.13.3+1
+  shared_preferences: ^0.5.0
+
+dev_dependencies:
+  #parse_server_sdk: 1.0.23
+  parse_server_sdk:
+    git:
+      url: git@github.com:zenz/flutter_parse_sdk.git
+      ref: 63da5b4243d213824541a35d71c72e82f57c6ac6
+  # parse_server_sdk:
+  #   path: ../
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/parse.png
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto/Roboto-Thin.ttf
+          weight: 100
+        - asset: fonts/Roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: fonts/Roboto/Roboto-Bold.ttf
+          weight: 700
+        - asset: fonts/Roboto/Roboto-Black.ttf
+          weight: 900
